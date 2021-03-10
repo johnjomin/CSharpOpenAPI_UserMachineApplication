@@ -42,7 +42,7 @@ namespace CSharpOpenAPI_UserMachineApplication.Services
         private IMongoDatabase Connect()
         {
 
-            MongoClient client = new MongoClient("mongodb+srv://admin:admin@personal-cluster.0ekfl.mongodb.net/?retryWrites=true&w=majority");
+            MongoClient client = new MongoClient("");//insert your mongodb srv
             IMongoDatabase _database = client.GetDatabase("CSharpOpenAPI_UserMachineApplication");
 
             return _database;
